@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditContactActivity"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_edit"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0086EC"
+        android:elevation="2dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Edit Contact"
+        app:titleTextColor="@color/black"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="150dp"
+        android:src="@drawable/baseline_account_circle_24" />
+
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/edit_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Edit the contact name"
+        />
+
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/edit_text_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/baseline_call_24"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Edit the contact number"
+        />
+
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/edit_text_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/baseline_mail_outline_24"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Edit the contact mail"
+        />
+
+    <Button
+        android:layout_margin="5dp"
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary"
+        android:textColor="@color/white"
+        android:text="Add Contact" />
+</LinearLayout>
